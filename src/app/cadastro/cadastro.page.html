@@ -1,0 +1,60 @@
+<ion-header>
+</ion-header>
+
+<ion-content color="dark">
+	<div class="container">
+		<div class="titulo">
+			<h1>Cadastre-se</h1>
+		</div>
+		<ion-label class="dist">Nome completo</ion-label>
+		<ion-item>
+			<ion-input type="text"></ion-input>
+		</ion-item>
+
+		<ion-label class="dist">CPF</ion-label>
+		<ion-item>
+			<ion-input type="number"></ion-input>
+		</ion-item>
+
+
+
+		<ion-label class="dist">Data de Nascimento</ion-label>
+		<ion-item color="danger">
+			<ion-datetime displayFormat="D MMM YYYY" min="1990" max="2020"></ion-datetime>
+		</ion-item>
+
+		<ion-label class="dist">Sexo</ion-label>
+		<ion-item> 
+			<ion-label>M</ion-label>
+			<ion-radio slot="start"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>F</ion-label>
+			<ion-radio slot="start"></ion-radio>
+		</ion-item>
+
+
+		<ion-label class="dist">Telefone</ion-label>
+		<ion-item>
+			<ion-input type="text"></ion-input>
+		</ion-item>
+
+		<ion-label class="dist">E-mail</ion-label>
+		<ion-item>
+			<ion-input type="email"></ion-input>
+		</ion-item>
+
+		<ion-label class="dist">Senha</ion-label>
+		<ion-item>
+			<ion-input type="password"></ion-input>
+		</ion-item>
+
+		<ion-label class="dist">Confirmar Senha</ion-label>
+		<ion-item>
+			<ion-input type="password"></ion-input>
+		</ion-item>
+
+		<ion-button color="warning" expand="block">Cadastrar</ion-button>
+		<ion-button fill="outline" color="danger" expand="block">Login</ion-button>
+	</div>
+</ion-content>

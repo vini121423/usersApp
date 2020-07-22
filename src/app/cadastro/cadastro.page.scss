@@ -1,0 +1,32 @@
+.dist{
+    margin-top:20px;
+    padding-left: 2px;
+}
+
+.titulo{
+    text-align: center;
+    margin-top:40px;
+}
+
+ion-content{
+    font-weight: bolder;
+    padding:5px;
+}
+
+.container{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.ion-button{
+    margin-bottom:10px;
+}
+
+ion-input{
+    --padding-start:15px;
+    --background: white;
+    color:black;
+    font-weight: bold !important;
+    height:25px;
+    border-radius:20px;
+}
