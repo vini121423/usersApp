@@ -6,55 +6,60 @@
 		<div class="titulo">
 			<h1>Cadastre-se</h1>
 		</div>
-		<ion-label class="dist">Nome completo</ion-label>
-		<ion-item>
+		
+		<div class="dist">
+		<ion-label>Nome completo</ion-label>
 			<ion-input type="text"></ion-input>
-		</ion-item>
-
-		<ion-label class="dist">CPF</ion-label>
-		<ion-item>
-			<ion-input type="number"></ion-input>
-		</ion-item>
-
-
-
-		<ion-label class="dist">Data de Nascimento</ion-label>
-		<ion-item color="danger">
-			<ion-datetime displayFormat="D MMM YYYY" min="1990" max="2020"></ion-datetime>
-		</ion-item>
-
-		<ion-label class="dist">Sexo</ion-label>
-		<ion-item> 
-			<ion-label>M</ion-label>
-			<ion-radio slot="start"></ion-radio>
-		</ion-item>
-		<ion-item>
-			<ion-label>F</ion-label>
-			<ion-radio slot="start"></ion-radio>
-		</ion-item>
-
-
-		<ion-label class="dist">Telefone</ion-label>
-		<ion-item>
+        </div>
+		
+		<div class="dist">
+		<ion-label>CPF</ion-label>
 			<ion-input type="text"></ion-input>
-		</ion-item>
+        </div>
 
-		<ion-label class="dist">E-mail</ion-label>
-		<ion-item>
+
+        <div class="dist">
+		<ion-label>Data de Nascimento</ion-label>
+			<ion-button color="success" fill="outline">Selecione<ion-datetime displayFormat="D MMM YYYY" min="1990" max="2020"></ion-datetime></ion-button>
+		</div>
+
+        <div class="dist">
+		 <ion-radio-group allow-empty-selection value="sexo" color="dark">
+            <ion-label>Sexo</ion-label>
+
+          <ion-item color="dark">
+            <ion-label>F</ion-label>
+            <ion-radio slot="end" color="primary" value="f"></ion-radio>
+          </ion-item>
+
+          <ion-item color="dark">
+            <ion-label>M</ion-label>
+            <ion-radio slot="end" color="secondary" value="m"></ion-radio>
+          </ion-item>
+		  </ion-radio-group>
+        </div>
+
+        <div class="dist">
+		<ion-label>Telefone</ion-label>
+			<ion-input type="text"></ion-input>
+		</div>
+
+        <div class="dist">
+		<ion-label>E-mail</ion-label>
 			<ion-input type="email"></ion-input>
-		</ion-item>
+		</div>
 
-		<ion-label class="dist">Senha</ion-label>
-		<ion-item>
+        <div class="dist"> 
+		<ion-label>Senha</ion-label>
 			<ion-input type="password"></ion-input>
-		</ion-item>
-
-		<ion-label class="dist">Confirmar Senha</ion-label>
-		<ion-item>
+        </div>
+		
+		<div class="dist">
+		<ion-label>Confirmar Senha</ion-label>
 			<ion-input type="password"></ion-input>
-		</ion-item>
-
-		<ion-button color="warning" expand="block">Cadastrar</ion-button>
+        </div>
+		 
+		<ion-button color="warning" expand="block" class="ion-button">Cadastrar</ion-button>
 		<ion-button fill="outline" color="danger" expand="block">Login</ion-button>
 	</div>
 </ion-content>
