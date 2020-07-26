@@ -20,7 +20,7 @@
 
         <div class="dist">
 		<ion-label>Data de Nascimento</ion-label>
-			<ion-button color="success" fill="outline">Selecione<ion-datetime displayFormat="D MMM YYYY" min="1990" max="2020"></ion-datetime></ion-button>
+			<ion-button color="success" fill="outline"><ion-datetime displayFormat="D MMM YYYY" min="1990" max="2020"></ion-datetime>Selecione</ion-button>
 		</div>
 
         <div class="dist">
@@ -59,7 +59,7 @@
 			<ion-input type="password"></ion-input>
         </div>
 		 
-		<ion-button color="warning" expand="block" class="ion-button">Cadastrar</ion-button>
-		<ion-button fill="outline" color="danger" expand="block">Login</ion-button>
+		<ion-button color="warning" expand="block" class="ion-button" routerLink="/home">Cadastrar</ion-button>
+		<ion-button fill="outline" color="danger" expand="block" routerLink="/login">Login</ion-button>
 	</div>
 </ion-content>
